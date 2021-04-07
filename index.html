@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Google</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a>Tienda</a>
+                <a>Acerca</a>
+            </div>
+            <div>
+                <a href="#">Gmail</a>
+                <a href="#">Imagenes</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+        </div>
+        <form>
+            <div class="search_icon gsprite"></div>
+            <input type="text" name="search" id="search">
+            <div class="buttons">
+                <a><div id="gsearch">Busqueda Google</div></a>
+                <a ><div id="lucky">Me siento con suerte</div></a>
+            </div>
+        </form>
+    </main>
+    <div onclick="darkmode()">
+        <span class="switch gsprite"></span>
+    </div>
+        <footer>
+            <nav>
+                <div>
+                    <a href="#">Publicidad</a>
+                    <a href="#">Negocios</a>
+                    <a href="#">Como funciona la busqueda</a>
+                </div>
+                <div>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Terminos y condiciones</a>
+                    <a href="#">Ajustes</a>
+                </div>
+            </nav>
+        </footer>
+        <script>
+            function myMenu() {
+                var x = document.getElementById("popup");
+                if (x.style.display === "none") {
+                    x.style.display = "flex";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function darkMode() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+        </script>
+</body>
+</html>
